@@ -25,7 +25,7 @@ const App = () => {
   const handleSelectRow = (name) => {
     setSelected((prevSelected) =>
       prevSelected.includes(name)
-        ? prevSelected.filter((item) => item !== name)
+        ? prevSelected?.filter((item) => item !== name)
         : [...prevSelected, name]
     );
   };
@@ -34,7 +34,7 @@ const App = () => {
   const isPartialSelected = selected.length > 0 && !isAllSelected;
 
   const handleDownload = () => {
-    const downloadedItems = data.filter((item) => selected.includes(item.name));
+    const downloadedItems = data?.filter((item) => selected.includes(item.name));
     alert(`Downloaded Items:\n${downloadedItems.map((item) => `Name: ${item.name} Device: ${item.device} Path: ${item.path}`).join('\n')}`);
   };
 
