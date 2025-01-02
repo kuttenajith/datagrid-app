@@ -1,0 +1,40 @@
+.datagrid-container {
+    margin: 20px;
+}
+
+.datagrid-table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header-controls {
+    display: flex;
+    padding: 10px 0px;
+}
+
+.download-text {
+    cursor: not-allowed;
+    color: #aaa;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.download-text.enabled {
+    cursor: pointer;
+    color: #007bff;
+}
+
+.download-text.disabled {
+    color: gray;
+    cursor: not-allowed;
+}
+
+.column-header {
+    background-color: #f9f9f9;
+    text-align: left;
+}
+
+.column-header th {
+    padding: 10px 0px;
+}

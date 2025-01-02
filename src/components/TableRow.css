@@ -1,0 +1,12 @@
+.table-row {
+    text-align: left;
+    border-bottom: 1px solid #aaa;
+}
+
+.table-row td {
+    padding: 10px 0px;
+}
+
+.status-available {
+    color: green;
+}
